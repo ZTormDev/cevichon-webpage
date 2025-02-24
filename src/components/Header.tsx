@@ -18,6 +18,14 @@ const Header: React.FC = () => {
         <Link to="/horario" className="nav-link">
           Horario
         </Link>
+        <a
+          href="https://wa.me/?text=Hola!"
+          className="nav-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contactar
+        </a>
       </nav>
     </header>
   );

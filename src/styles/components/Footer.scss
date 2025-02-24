@@ -1,0 +1,45 @@
+@use "../variables" as *;
+
+.footer {
+  background: linear-gradient(to right, $blue-dark, $blue-primary);
+  padding: 2rem;
+  text-align: center;
+  color: $background-light;
+
+  .footer__social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+
+    a {
+      color: $blue-lightest;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: rgba($blue-lightest, 0.1);
+        color: white;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  p {
+    color: $blue-lighter;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+
+    .footer__social-media {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+}

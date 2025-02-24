@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
 import Footer from "../components/Footer";
 import products from "../database/products.json";
+import "../styles/pages/MenuPage.scss";
 
 const MenuPage: React.FC = () => {
   return (
@@ -16,9 +17,7 @@ const MenuPage: React.FC = () => {
               id: index,
               name: product.nombre,
               description: product.descripcionCorta,
-              price: parseInt(
-                product.precioActual.replace("$", "").replace(".", "")
-              ),
+              price: product.precioActual,
               imageUrl: product.imagen,
             }))
             .map((product) => (

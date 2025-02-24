@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
         >
           Instagram
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          Twitter
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+          TikTok
         </a>
       </div>
       <p>&copy; {new Date().getFullYear()} Cevichón. All rights reserved.</p>

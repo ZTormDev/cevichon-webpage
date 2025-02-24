@@ -1,0 +1,37 @@
+@use "../variables" as *;
+
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: $text-primary;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+    }
+  }
+}

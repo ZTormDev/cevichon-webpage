@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="product-info">
         <h2 className="product-title">{product.name}</h2>
         <p className="product-description">{product.description}</p>
-        <span className="product-price">${product.price.toLocaleString()}</span>
+        <span className="product-price">{product.price}</span>
       </div>
     </div>
   );
